@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- navbar section start  -->
-    <section class="ml-12 mr-12 mt-4 mb-2">
+    <section class="lg:ml-12 lg:mr-12 sm:mr-4 lg:mt-4 lg:mb-2">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -37,16 +37,17 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              class="sm:menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li><a>Home</a></li>
               <li>
                 <a>About</a>
               </li>
               <li><a>Destination</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
-          <p class="text-xl text-[#030712] font-extrabold">Raj-Tickets</p>
+          <p class="text-xl text-[#030712] font-extrabold mr-3">Raj-Tickets</p>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -69,7 +70,7 @@
     <!-- home page section start -->
     <section>
       <div
-        class="bg-[url('/images/banner.png')] min-h-svh bg-no-repeat bg-center border"
+        class="bg-[url('/images/banner.png')] min-h-svh bg-no-repeat bg-center"
       >
         <div class="flex justify-center items-center min-h-svh">
           <div class="text-center gap-3">
@@ -87,13 +88,51 @@
             </button>
           </div>
         </div>
+        <!-- card section start   -->
+        <div class="position">
+          <div
+            class="lg:flex sm:flex-col justify-center lg:flex-row gap-4 mb-6"
+          >
+            <!-- cart 1  -->
+            <div
+              class="flex gap-3 border border-b-[#1DD100] rounded-lg bg-[#FFFFFF] p-3"
+            >
+              <div><img src="images/people.png" alt="" srcset="" /></div>
+              <div>
+                <h3 class="text-2xl text-black">500k+</h3>
+                <p>Registered users</p>
+              </div>
+            </div>
+            <!-- cart 2 -->
+            <div
+              class="flex gap-3 border border-b-[#1DD100] rounded-lg bg-[#FFFFFF] p-3"
+            >
+              <div><img src="images/ticket-cupon.png" alt="" srcset="" /></div>
+              <div>
+                <h3 class="text-2xl text-black">1.7 lacks</h3>
+                <p>Tickets sold</p>
+              </div>
+            </div>
+            <!-- cart 3 -->
+            <div
+              class="flex gap-3 border border-b-[#1DD100] rounded-lg bg-[#FFFFFF] p-3"
+            >
+              <div><img src="images/people.png" alt="" srcset="" /></div>
+              <div>
+                <h3 class="text-2xl text-black">500k+</h3>
+                <p>Registered users</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- card section end  -->
     </section>
     <!-- home page section end  -->
 
     <!-- best offer section start  -->
 
-    <section></section>
+    <section class="mt-9"></section>
     <!-- best offer section end  -->
     <!-- Main /ticket booking section start  -->
 

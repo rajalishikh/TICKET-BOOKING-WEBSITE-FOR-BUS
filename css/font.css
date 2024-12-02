@@ -3,3 +3,8 @@
 .font_custom {
   font-family: "Raleway", sans-serif;
 }
+.position {
+  position: relative;
+  left: 20px;
+  bottom: 80px;
+}
