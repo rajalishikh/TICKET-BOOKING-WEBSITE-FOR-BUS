@@ -191,7 +191,7 @@
 
     <!-- Main /ticket booking section start very important section   -->
 
-    <section class="bg-[#F7F8F8]">
+    <section class="bg-[#F7F8F8] min-h-svh">
       <!-- bus tickets information section  -->
       <div>
         <h3 class="text-center text-black font-bold text-3xl">RAJ Paribahan</h3>
@@ -202,14 +202,16 @@
       </div>
       <!-- main box start  -->
       <div class="flex justify-center items-center">
-        <div class="flex mt-3 items-center bg-white rounded-xl pl-6 w-[1000px]">
+        <div
+          class="flex mt-3 items-center bg-white rounded-xl pl-6 lg:w-[1000px] sm:w-auto"
+        >
           <!-- 40 sit section start  -->
           <div>
             <div class="flex justify-between">
-              <div class="flex gap-2">
+              <div class="flex">
                 <img src="images/bus-logo.png" alt="" srcset="" />
-                <div>
-                  <h3 class="text-black font-bold text-3xl">RAJ Paribahan</h3>
+                <div class="ml-4">
+                  <h3 class="text-black font-bold text-xl">RAJ Paribahan</h3>
                   <p>Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
@@ -273,6 +275,36 @@
       </div>
       <!-- main box end   -->
       <!-- ................................................................... -->
+      <!-- tickets booking part start  -->
+      <div class="mt-6 bg-[#FFFFFF]">
+        <!-- sit section  -->
+        <div>
+          <div>
+            <h4 class="mb-3 pt-4">Select Your Seat</h4>
+            <hr style="border-bottom: dotted 1px #03071233" />
+            <div class="flex justify-between mb-3 mt-3">
+              <div class="flex">
+                <img src="./images/seat-gray.png" alt="" srcset="" />
+                <p>Available</p>
+              </div>
+              <div class="flex">
+                <img src="./images/seat-green-filled.png" alt="" srcset="" />
+                <p class="text-[#1DD100]">Selected</p>
+              </div>
+            </div>
+            <hr style="border-bottom: dotted 1px #03071233" />
+            <div class="flex justify-end mt-3">
+              <p class="p-2 bg-[#0307121A] w-20 flex justify-center rounded-xl">
+                <img src="images/Vector.png" alt="" srcset="" />
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- hr section  -->
+        <div></div>
+        <!-- selected sit information  -->
+        <div></div>
+      </div>
     </section>
     <!--  Main /ticket booking section end  -->
 
