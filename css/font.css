@@ -11,3 +11,7 @@
 .work {
   width: 573px;
 }
+.vl {
+  border-left: 2px dotted #03071233;
+  height: 800px;
+}
