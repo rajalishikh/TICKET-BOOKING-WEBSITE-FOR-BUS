@@ -14,3 +14,7 @@ function setId(element,value){
     x.innerText=value
 
 }
+function removeClass(element){
+    let x=document.getElementById(element)
+    x.classList.remove('hidden')
+}

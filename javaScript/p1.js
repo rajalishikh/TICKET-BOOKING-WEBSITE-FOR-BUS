@@ -17,7 +17,9 @@ for(let sit of sits){
        let x=e.target.innerText
        array_clicked.push(x)
        console.log("array",array_clicked)
-      if(array_clicked.length <= 4){
+     // limitation
+       if(array_clicked.length <= 4){
+        
         let FindClass=e.target;
         FindClass.classList.add('bg-lime-500','text-slate-50')
         // End the background color 
@@ -59,6 +61,9 @@ for(let sit of sits){
         // set total price 
         setId('total_price_adding',adding_total_price)
         setId('grand_total',adding_total_price)
+        if(array_clicked.length == 4){
+            removeClass('Applying_button')
+        }
 
 
       }
