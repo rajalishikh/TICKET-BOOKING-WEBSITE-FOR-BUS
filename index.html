@@ -547,15 +547,11 @@
               </div>
               <hr style="border-bottom: dotted 1px #03071233 pt-3 pb-3" />
               <!-- sit number end  -->
-              <div class="grid grid-cols-3 gap-9">
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
+              <div id="total_name_Price" class="grid grid-cols-3 gap-4"></div>
               <hr style="border-bottom: dotted 1px #03071233" />
               <div class="flex justify-between pt-3 pb-3">
                 <p>Total Price</p>
-                <p>BDT<span>0</span></p>
+                <p>BDT <span id="total_price_adding">0</span></p>
               </div>
               <div
                 class="flex bg-[#FFFFFF] p-2 border m-8 rounded-xl justify-between"
@@ -566,13 +562,15 @@
                   id=""
                   placeholder="Have any copupon?"
                 />
-                <button class="bg-[#1DD100] p-3 rounded-xl w-24 text-white">
+                <button
+                  class="bg-[#1DD100] p-3 rounded-xl w-24 text-white hidden"
+                >
                   Apply
                 </button>
               </div>
               <div class="flex justify-between">
                 <p class="text-xl text-black font-medium">Grand Total</p>
-                <p>BDT <span>0</span></p>
+                <p>BDT <span id="grand_total">0</span></p>
               </div>
             </div>
             <!-- grand total  box end  -->
