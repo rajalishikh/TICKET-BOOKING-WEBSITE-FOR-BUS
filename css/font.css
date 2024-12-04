@@ -15,3 +15,6 @@
   border-left: 2px dotted #03071233;
   height: 800px;
 }
+html {
+  scroll-behavior: smooth;
+}
