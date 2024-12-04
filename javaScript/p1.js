@@ -76,3 +76,23 @@ for(let sit of sits){
   
 }
 
+
+function Applying_discount(){
+  let find_cupon_applying=document.getElementById('input_of_cupon')
+  if(find_cupon_applying.value === 'NEW15'){
+    let find_grand_total=findId('grand_total')
+    let value=find_grand_total *(15/100)
+    let value_after_discount=find_grand_total-value
+    setId('grand_total',value_after_discount)
+
+  }else if(find_cupon_applying.value === 'Couple 20'){
+    let find_grand_total=findId('grand_total')
+    let value=find_grand_total *(20/100)
+    let value_after_discount=find_grand_total-value
+    setId('grand_total',value_after_discount)
+
+
+  }
+  
+
+}
