@@ -10,7 +10,7 @@ function findId(element){
 // set value 
 function setId(element,value){
     let x=document.getElementById(element)
-    console.log("set value",x)
+    
     x.innerText=value
 
 }
