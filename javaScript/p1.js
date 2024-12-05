@@ -118,6 +118,13 @@ function Applying_discount(){
 
 }
 
+function click_next(){
+  addClassList('main_part')
+  removeClass("sub_cart")
+
+
+}
+
 
 
 
