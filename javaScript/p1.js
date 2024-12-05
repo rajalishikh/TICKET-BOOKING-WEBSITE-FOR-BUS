@@ -5,6 +5,7 @@ let array_clicked=[]
 
 
 
+
 for(let sit of sits){
     // set the background color 
     
@@ -12,11 +13,24 @@ for(let sit of sits){
    sit.addEventListener('click',function(e){
    
       this.disabled=true;
+      
   
   
        let x=e.target.innerText
        array_clicked.push(x)
        console.log("array",array_clicked)
+      //  find number input
+      let number_input=document.getElementById('Number_section')
+
+      number_input.addEventListener('keyup',function(event){
+        let x=event.key
+        console.log(x)
+        if (!isNaN(x) && x.trim() !== "" ) {
+          removeClass2('222')
+      }
+
+      })
+      
      // limitation
        if(array_clicked.length <= 4){
         
@@ -64,35 +78,47 @@ for(let sit of sits){
         if(array_clicked.length == 4){
             removeClass('Applying_button')
         }
-
-
+        
       }
+
+
       else{
         return alert("Your limit is over")
       }
+
   
      
    })
   
 }
 
-
+// discount part 
 function Applying_discount(){
   let find_cupon_applying=document.getElementById('input_of_cupon')
+  console.log(find_cupon_applying)
   if(find_cupon_applying.value === 'NEW15'){
     let find_grand_total=findId('grand_total')
     let value=find_grand_total *(15/100)
     let value_after_discount=find_grand_total-value
     setId('grand_total',value_after_discount)
+    addClassList('cupon_div')
 
   }else if(find_cupon_applying.value === 'Couple 20'){
     let find_grand_total=findId('grand_total')
     let value=find_grand_total *(20/100)
     let value_after_discount=find_grand_total-value
     setId('grand_total',value_after_discount)
+    addClassList('cupon_div')
 
 
+  }else{
+    alert('Please provide valid coupon code')
   }
   
 
 }
+
+
+
+
+

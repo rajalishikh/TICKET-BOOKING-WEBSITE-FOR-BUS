@@ -14,7 +14,18 @@ function setId(element,value){
     x.innerText=value
 
 }
+// remove class list 
 function removeClass(element){
     let x=document.getElementById(element)
     x.classList.remove('hidden')
 }
+// add class list 
+function addClassList(element){
+    let x=document.getElementById(element)
+    x.classList.add('hidden')
+}
+function removeClass2(element){
+    let x=document.getElementById(element)
+    x.classList.remove('disabled')
+}
+
