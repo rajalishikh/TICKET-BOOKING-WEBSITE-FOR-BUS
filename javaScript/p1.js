@@ -26,7 +26,7 @@ for(let sit of sits){
         let x=event.key
         console.log(x)
         if (!isNaN(x) && x.trim() !== "" ) {
-          removeClass('222')
+          removeClass2('222')
       }
 
       })
