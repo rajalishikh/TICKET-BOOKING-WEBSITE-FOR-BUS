@@ -17,7 +17,7 @@
     <!-- all part of my work  -->
     <main class="" id="main_part">
       <!-- navbar section start  -->
-      <section class="lg:ml-12 lg:mr-12 sm:mr-4 lg:mt-4 lg:mb-2">
+      <section class="ml-12 mr-12 mt-4 mb-2">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -580,6 +580,10 @@
                   <p class="text-xl text-black font-medium">Total Price</p>
                   <p>BDT <span id="total_price_adding">0</span></p>
                 </div>
+                <div class="flex justify-between pt-3 pb-3">
+                  <p class="text-xl text-black font-medium">Discount Price</p>
+                  <p>BDT <span id="discount_price_adding">0</span></p>
+                </div>
                 <div
                   id="cupon_div"
                   class="flex bg-[#FFFFFF] p-2 border m-8 rounded-xl justify-between"
@@ -725,7 +729,7 @@
     <section id="sub_cart" class="border min-h-svh bg-[#F7F8F8] hidden">
       <div class="flex justify-center items-center min-h-svh gap-y-3">
         <div class="bg-[#FFFFFF] p-10 rounded-xl">
-          <div class="flex justify-center">
+          <div class="flex justify-center mb-4">
             <div>
               <img src="images/success.png" alt="" srcset="" />
             </div>
@@ -742,11 +746,11 @@
               Shortly you will find a confirmation in your email.
             </p>
           </div>
-          <p
-            class="text-white text-2xl p-3 rounded-2xl text-center bg-[#27AE60] mt-3"
-          >
-            Continue
-          </p>
+          <div class="flex justify-center border rounded-2xl bg-[#27AE60] mt-3">
+            <button onclick="go_to_home_page()" class="text-white text-2xl p-3">
+              Continue
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -99,6 +99,7 @@ function Applying_discount(){
   if(find_cupon_applying.value === 'NEW15'){
     let find_grand_total=findId('grand_total')
     let value=find_grand_total *(15/100)
+    setId('discount_price_adding',value)
     let value_after_discount=find_grand_total-value
     setId('grand_total',value_after_discount)
     addClassList('cupon_div')
@@ -106,6 +107,7 @@ function Applying_discount(){
   }else if(find_cupon_applying.value === 'Couple 20'){
     let find_grand_total=findId('grand_total')
     let value=find_grand_total *(20/100)
+    setId('discount_price_adding',value)
     let value_after_discount=find_grand_total-value
     setId('grand_total',value_after_discount)
     addClassList('cupon_div')
@@ -121,6 +123,13 @@ function Applying_discount(){
 function click_next(){
   addClassList('main_part')
   removeClass("sub_cart")
+
+
+}
+function go_to_home_page(){
+  addClassList("sub_cart")
+  removeClass('main_part')
+  location.reload()
 
 
 }
